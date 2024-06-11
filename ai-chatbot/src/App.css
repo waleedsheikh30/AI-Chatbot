@@ -1,0 +1,100 @@
+#root {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.markdown-content h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.markdown-content h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
+
+.markdown-content h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.markdown-content p {
+  /* margin-bottom: 1rem; */
+  line-height: 1.5;
+}
+
+.markdown-content ul {
+  margin-bottom: 1rem;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.markdown-content ol {
+  margin-bottom: 1rem;
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+
+.markdown-content pre {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  color: #dcdcdc;
+}
+
+.markdown-content code {
+  background: #2d2d2d;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  font-family: 'Source Code Pro', monospace;
+  color: #dcdcdc;
+}
+
+.markdown-content blockquote {
+  border-left: 4px solid #555;
+  padding-left: 1rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
