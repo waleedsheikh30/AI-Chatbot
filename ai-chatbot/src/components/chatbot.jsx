@@ -16,6 +16,8 @@ function Chatbot() {
     const [showInstructions, setShowInstructions] = useState(true);
     const textareaRef = useRef(null);
 
+    const apiKey = import.meta.env.VITE_API_KEY;
+
     const particlesInit = useCallback(async (engine) => {
         await loadSlim(engine);
     }, []);
@@ -51,7 +53,7 @@ function Chatbot() {
 
         try {
             const response = await axios({
-                url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyA-SePe0nBEKjoJuHTX0z1UF9Fw6NRXeyU',
+                url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`,
                 method: 'post',
                 data: { "contents": [{ "parts": [{ "text": question }] }] }
             });
